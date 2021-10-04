@@ -9,13 +9,24 @@
       class="text-center"
     >
         <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 my-4 white--text"
+          href="https://instagram.com/textil_showroom"
+          target="_blank"
+          class="mx-4 my-4"
           icon
         >
           <v-icon size="24px">
-            {{ icon }}
+            mdi-instagram
+          </v-icon>
+        </v-btn>
+
+        <v-btn
+          href="https://www.snapchat.com/add/textil_paris"
+          target="_blank"
+          class="mx-4 my-4"
+          icon
+        >
+          <v-icon size="24px">
+            mdi-snapchat
           </v-icon>
         </v-btn>
 
@@ -31,12 +42,6 @@
 <script>
   export default {
     data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
     }),
   }
 </script>
